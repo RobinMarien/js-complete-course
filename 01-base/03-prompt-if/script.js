@@ -12,5 +12,15 @@
 (function() {
 
   // your code here
+    var answer = prompt("Would you like some cake?", "I'd suggest typing yes here!");
+
+    if (answer == "yes") {
+        //  block of code to be executed if the condition is true
+        window.alert("You've made the right decision, have some cake!");
+    } else {
+        //  block of code to be executed if the condition is false
+        window.alert("More cake for me then! :)");
+    }
+    //var x ="Hello "+ name + "!";
 
 })();
