@@ -12,5 +12,14 @@
 (function() {
 
     // your code here
+    document.getElementById("run").addEventListener("click", function add() {
 
+        //My solution
+        var myInput = document.getElementById("color").value;
+        document.body.style.background = myInput;
+
+        /* What phpstorm suggested afterwards
+        document.body.style.background = document.getElementById("color").value;
+         */
+    });
 })();
