@@ -12,5 +12,19 @@
 (function() {
 
     // your code here
+    document.getElementById("red").addEventListener("click", function add() {
+        document.body.style.background = "#FF0000";
+    });
 
+    document.getElementById("green").addEventListener("click", function add() {
+        document.body.style.background = "#00ff00";
+    });
+
+    document.getElementById("yellow").addEventListener("click", function add() {
+        document.body.style.background = "#fff600";
+    });
+
+    document.getElementById("blue").addEventListener("click", function add() {
+        document.body.style.background = "#0000FF";
+    });
 })();
