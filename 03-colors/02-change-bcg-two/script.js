@@ -12,7 +12,7 @@
 (function() {
 
     // your code here
-    document.getElementById("run").addEventListener("click", function add() {
+    document.getElementById("run").addEventListener("click", function() {
 
         //My solution
         var myInput = document.getElementById("color").value;

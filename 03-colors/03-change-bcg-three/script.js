@@ -12,5 +12,22 @@
 (function() {
 
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        /* Based on this example
+        var min=4;
+        var max=5;
+        var random =
+            Math.floor(Math.random() * (+max - +min)) + +min;
+         */
 
+        var x = Math.floor(Math.random() * 255);
+        var y = Math.floor(Math.random() * 255);
+        var z = Math.floor(Math.random() * 255);
+
+        /* quick test
+        document.body.style.background="rgb(255,0,0)"; */
+
+        document.body.style.background = "rgb("+x+","+y+","+z+")";
+        alert("Background color changed to rgb(" + x + ", " + y + ", " + z + ")");
+    });
 })();
