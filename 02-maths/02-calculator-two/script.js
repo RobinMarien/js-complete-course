@@ -14,6 +14,38 @@
 
     var performOperation = function(operation) {
         // perform the operation
+        var one = Number(document.getElementById("op-one").value);
+        var two = Number(document.getElementById("op-two").value);
+            switch(operation){
+                case "addition": {
+                    //var one = Number(document.getElementById("op-one").value);
+                    //var two = Number(document.getElementById("op-two").value);
+                    var answer = one + two;
+                    window.alert(one + " + " + two + " = " + answer);
+                    break;
+                }
+                case "substraction":{
+                    //var one = Number(document.getElementById("op-one").value);
+                    //var two = Number(document.getElementById("op-two").value);
+                    var answer = one - two;
+                    window.alert(one + " - " + two + " = " + answer);
+                    break;
+                }
+                case "multiplication":{
+                    //var one = Number(document.getElementById("op-one").value);
+                    //var two = Number(document.getElementById("op-two").value);
+                    var answer = one * two;
+                    window.alert(one + " * " + two + " = " + answer);
+                    break;
+                }
+                case "division":{
+                    //var one = Number(document.getElementById("op-one").value);
+                    //var two = Number(document.getElementById("op-two").value);
+                    var answer = one / two;
+                    window.alert(one + " / " + two + " = " + answer);
+                    break;
+                }
+            }
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
