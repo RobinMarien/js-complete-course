@@ -14,6 +14,11 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+        var answer;
+        for (var i = 1; i < 22; i++) {
+            answer = i*i;
+            alert(i + " * " + i + " = " + answer)
+        }
 
     });
 
