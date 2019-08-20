@@ -17,7 +17,12 @@
     document.getElementById("run").addEventListener("click", function() {
         // your code here
         arr.sort((a,b) => a - b);
-        document.getElementById("numbers").value = arr;
+
+        // Display the sorted list in the same input field ->
+        // document.getElementById("numbers").value = arr;
+
+        // Display the sorted list in an alert box
+        alert(arr);
     });
 
 })();
