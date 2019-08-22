@@ -23,7 +23,7 @@
     if (hour == 17 && minute > 29){
         document.getElementById("target").innerHTML = y;
     }
-    else if (hour >= 18) {
+    else if (hour > 17) {
         document.getElementById("target").innerHTML = y;
     }
     else {
