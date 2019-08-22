@@ -19,19 +19,21 @@
         var useryear = document.getElementById("dob-year").value;
 
         var d = new Date();
-        var m = d.getMonth() - usermonth;
+        var m = (d.getMonth()+1) - usermonth;
         var day = d.getDate() - userday;
 
-        var age;
+        var age = d.getFullYear() - useryear;
 
-        if ( m > 0 && day > 0){
-            age = d.getFullYear() - useryear;
-        }
-        else{
-            age = d.getFullYear() - useryear - 1;
-        }
 
-        alert ("Your birthday: " + userday + "/" + usermonth + "/" + useryear + "\nYour age: " + age);
-        
+        if (m == 0 && day == 00){
+            alert ("Happy birthday!!! \nYou are now " + age + " years old!");
+        }
+        else if ( m <= 0 && day < 0){
+            age = age - 1;
+            alert ("Your birthday: " + userday + "/" + usermonth + "/" + useryear + "\nYour age: " + age);
+        }
+        else
+            alert ("Your birthday: " + userday + "/" + usermonth + "/" + useryear + "\nYour age: " + age);
+
     });
 })();
