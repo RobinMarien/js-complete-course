@@ -20,7 +20,7 @@
 
     // your code here
 
-    if (hour = 17 && minute > 29){
+    if (hour == 17 && minute > 29){
         document.getElementById("target").innerHTML = y;
     }
     else if (hour >= 18) {

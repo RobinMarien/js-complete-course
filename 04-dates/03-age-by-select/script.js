@@ -12,5 +12,26 @@
 (function() {
 
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
 
+        var userday= document.getElementById("dob-day").value;
+        var usermonth = document.getElementById("dob-month").value;
+        var useryear = document.getElementById("dob-year").value;
+
+        var d = new Date();
+        var m = d.getMonth() - usermonth;
+        var day = d.getDate() - userday;
+
+        var age;
+
+        if ( m > 0 && day > 0){
+            age = d.getFullYear() - useryear;
+        }
+        else{
+            age = d.getFullYear() - useryear - 1;
+        }
+
+        alert ("Your birthday: " + userday + "/" + usermonth + "/" + useryear + "\nYour age: " + age);
+        
+    });
 })();
