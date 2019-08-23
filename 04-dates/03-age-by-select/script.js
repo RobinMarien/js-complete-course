@@ -25,15 +25,27 @@
         var age = d.getFullYear() - useryear;
 
 
-        if (m == 0 && day == 00){
-            alert ("Happy birthday!!! \nYou are now " + age + " years old!");
+        if (m == 0) {
+
+            if (day == 00) {
+                alert("Happy birthday!!! \nYou are now " + age + " years old!");
+            }
+            else if (day < 0){
+                age = age - 1;
+                alert ("Your birthday: " + userday + "/" + usermonth + "/" + useryear + "\nYour age: " + age);
+            }
+            else {
+                alert ("Your birthday: " + userday + "/" + usermonth + "/" + useryear + "\nYour age: " + age);
+            }
         }
-        else if ( m <= 0 && day < 0){
+
+        else if ( m > 0) {
             age = age - 1;
             alert ("Your birthday: " + userday + "/" + usermonth + "/" + useryear + "\nYour age: " + age);
         }
-        else
-            alert ("Your birthday: " + userday + "/" + usermonth + "/" + useryear + "\nYour age: " + age);
 
+        else{
+            alert ("Your birthday: " + userday + "/" + usermonth + "/" + useryear + "\nYour age: " + age);
+        }
     });
 })();
