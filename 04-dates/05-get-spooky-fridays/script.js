@@ -37,7 +37,7 @@
             date.setMonth(i);
 
             if (date.getDay() === 5){
-                document.getElementById("answer").innerHTML += months[date.getMonth()] + " ";
+                document.getElementById("answer").innerHTML += months[date.getMonth()] + "<br>";
             }
         }
     })
