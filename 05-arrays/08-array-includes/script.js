@@ -28,4 +28,13 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", function(){
+        var answer = fruits.includes("apple");
+        if (answer === true){
+            console.log("YES (apple is in the array)")
+        }
+        else{
+            console.log("NO (apple is not in the array)")
+        }
+    })
 })();
