@@ -30,7 +30,7 @@
         //add element at the end
         fruits.push("Kiwi");
         //delete first element
-        fruits.shift()
+        fruits.shift();
         //add element at the beginning
         fruits.unshift("banana");
         console.log(fruits);
