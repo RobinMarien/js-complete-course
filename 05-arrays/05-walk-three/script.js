@@ -40,5 +40,9 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", function(){
+        people.forEach(function(person){
+            console.log(person.firstname + " " + person.lastname)
+        })
+    })
 })();
