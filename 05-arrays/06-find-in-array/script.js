@@ -93,7 +93,8 @@
     document.getElementById("run").addEventListener("click", function() {
         people.forEach(function(person, index){
             if (person.firstname ==  "Jean" && person.lastname =="Dupont"){
-                console.log(person.email + " , " + "index: " + index)
+                console.log("Email: " + person.email);
+                console.log("Index: " + index);
             }
         })
     })
