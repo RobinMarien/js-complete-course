@@ -13,4 +13,20 @@
 
     // your code here
 
+    //get value from attribute of source element
+    var x = document.getElementById("source").getAttribute("data-image");
+
+    //create new img element
+    var image = document.createElement("img");
+    //set value to src attribute of image
+    image.setAttribute("src", "http://www.randomkittengenerator.com/cats/rotator.php");
+    //place image inside figure element
+    document.getElementById("target").appendChild(image);
+
+    //remove original element
+    var bye = document.getElementById("source");
+    bye.remove();
+
+
+
 })();
