@@ -13,4 +13,27 @@
 
     // your code here
 
+    //getting the (new) value from data-hover attr of img
+    var image = document.getElementsByTagName("img");
+    var new_value = image[0].getAttribute("data-hover");
+
+    //getting the (old) original src value of the img
+    var old_value = image[0].getAttribute("src");
+
+    //changing the src attribute when hovering over image
+    image[0].onmouseover = function(){
+        image[0].setAttribute("src", new_value);
+    /*  We can also use
+         image[0].src = new_value;
+     */
+    }
+
+    //changing src back to original value when 'leaving' the img
+
+    image[0].onmouseleave = function(){
+        image[0].src = old_value;
+    }
+
+
+
 })();
