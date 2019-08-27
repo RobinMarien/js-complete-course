@@ -13,4 +13,20 @@
 
     // your code here
 
+    var counter = document.getElementById("counter");
+    var password = document.getElementById("pass-one");
+
+    password.addEventListener("input", function(){
+
+        var text = password.value.length;
+
+        if (text>10) {
+            password.value = password.value.substring(0, 10);
+            text = 10
+        }
+
+        counter.innerHTML = text + "/10";
+
+
+    })
 })();
