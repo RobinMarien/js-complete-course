@@ -13,4 +13,17 @@
 
     // your code here
 
+    document.getElementById("run").addEventListener("click", function(){
+        var input1 = document.getElementById("pass-one").value;
+        var input2 = document.getElementById("pass-two").value;
+
+
+        if (input1 === input2){
+            alert("The passwords are exactly the same");
+        }
+        else{
+            document.getElementById("pass-one").classList.add("error");
+            document.getElementById("pass-two").classList.add("error");
+        }
+    })
 })();
