@@ -17,7 +17,7 @@
     var container = document.getElementById("target");
     //take the current string inside of that container
     var letters = document.getElementById("target").innerText;
-    //split the string up into an array
+    //split the string up into an array of separate letters
     letters = letters.split("");
     //"reset" the container, so it's empty
     container.innerText = "";
@@ -29,12 +29,12 @@
 
     letters.forEach(function(letter) {
 
-        /*for each element (which are the separate letters at this point), we are creating an extra span element,
+        /*for each item/letter in the array, we are creating an extra span element,
         so we can apply styles to it */
         var wrap = document.createElement("span");
-        //put every array element inside one of those spans we just created
+        //put every letter inside one of those spans we just created
         wrap.innerText = letter;
-        //apply the fontsize (which is a variable we've set earlier (and put px behind it)
+        //apply the fontsize (which is a variable we've set earlier (and put px behind it))
         wrap.style.fontSize = fsize +"px";
         //if the fontsize reaches a certain size, reset it back to a smaller font
         if (fsize > 35) {
