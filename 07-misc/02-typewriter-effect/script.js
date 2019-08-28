@@ -13,4 +13,11 @@
 
     // your code here
 
+    var array = document.getElementById("target").innerText.split("");
+    document.getElementById("target").innerText = "" ;
+    function happy (){
+        document.getElementById("target").innerHTML += array.shift();
+    }
+    for (var i = 0; i<array.length; i++)
+        setTimeout(happy, Math.floor(Math.random()*10000))
 })();
