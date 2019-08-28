@@ -11,6 +11,14 @@
 
 (function() {
 
-    // your code here
+    // your code here       |       https://www.geeksforgeeks.org/creating-range-slider-html-using-javascript/
 
+
+    var rangeslider = document.getElementById("slider");
+    var output = document.getElementById("target");
+    output.innerHTML = "0" + rangeslider.value;
+
+    rangeslider.oninput = function() {
+        output.innerHTML = "0"+ this.value;
+    }
 })();
