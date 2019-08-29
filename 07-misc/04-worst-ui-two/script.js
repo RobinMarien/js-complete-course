@@ -11,6 +11,47 @@
 
 (function() {
 
+    /* Useful links
+
+    https://flaviocopes.com/add-click-event-to-dom-list/
+    https://davidwalsh.name/parseint-radix
+
+     */
+
     // your code here
+
+    var buttons = document.querySelectorAll("button");
+
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            //console.log("forEach worked");
+            var min = button.getAttribute("data-min");
+            var max = button.getAttribute("data-max")
+            var current = parseInt(button.innerText,10);
+            //console.log(min);
+            //console.log(max);
+            //console.log(current);
+            if (current < max){
+                current++;
+                button.innerHTML = current ;
+            }
+            else{
+                button.innerHTML = min ;
+            }
+
+            if (current < 10){
+                button.innerHTML = "0" + current;
+            }
+            var one = document.getElementById("part-one").innerHTML;
+            var two = document.getElementById("part-two").innerHTML;
+            var three = document.getElementById("part-three").innerHTML;
+            var four = document.getElementById("part-four").innerHTML;
+
+            console.log(one);
+
+            document.getElementById("target").innerHTML = "+32" + one + two + three + four ;
+        });
+    });
 
 })();
