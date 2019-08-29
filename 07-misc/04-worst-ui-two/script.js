@@ -20,6 +20,7 @@
 
     // your code here
 
+    document.getElementById("target").innerText = "+32460000000"
     var buttons = document.querySelectorAll("button");
 
 
