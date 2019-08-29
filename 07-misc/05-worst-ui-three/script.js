@@ -13,4 +13,32 @@
 
     // your code here
 
+    document.getElementById("target").innerText = "+32460000000"
+    var buttons = document.querySelectorAll("button");
+
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            //console.log(button.previousSibling.previousSibling);
+
+            var input = button.previousSibling.previousSibling;
+            var min = Number(input.getAttribute("data-min"));
+            var max = Number(input.getAttribute("data-max"));
+
+            var random = Math.floor(Math.random() * (max - min + 1)) + min;
+
+            input.value = random;
+
+            if (random < 10){
+                input.value = "0" + random;
+            }
+            
+            var one = document.getElementById("part-one").value;
+            var two = document.getElementById("part-two").value;
+            var three = document.getElementById("part-three").value;
+            var four = document.getElementById("part-four").value;
+
+            document.getElementById("target").innerHTML = "+32" + one + two + three + four ;
+        });
+    });
 })();
