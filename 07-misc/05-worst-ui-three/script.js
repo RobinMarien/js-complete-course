@@ -32,7 +32,7 @@
             if (random < 10){
                 input.value = "0" + random;
             }
-            
+
             var one = document.getElementById("part-one").value;
             var two = document.getElementById("part-two").value;
             var three = document.getElementById("part-three").value;
