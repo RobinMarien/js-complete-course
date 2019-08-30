@@ -11,6 +11,17 @@
 
 (function() {
 
-    // your code here
+    // your code here  |  https://blog.logrocket.com/the-complete-guide-to-using-localstorage-in-javascript-apps-ba44edb53a36/
+
+    document.getElementById("target").innerHTML = window.localStorage.getItem('number');
+
+    var counter = parseInt(document.getElementById("target").innerHTML);
+
+    document.getElementById("increment").addEventListener("click", function(){
+        counter++;
+        document.getElementById("target").innerHTML = counter;
+
+        window.localStorage.setItem('number', JSON.stringify(counter));
+    })
 
 })();
