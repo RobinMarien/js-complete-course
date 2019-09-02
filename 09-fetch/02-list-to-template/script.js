@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here       |       (https://dev.to/therealdanvega/html-template-tag-in-vanilla-javascript-and-vue-5eoo)
+    // your code here       |       (https://dev.to/therealdanvega/html-template-tag-in-vanilla-javascript-and-vue-5eoo
 
     document.getElementById("run").addEventListener("click", function(){
 
