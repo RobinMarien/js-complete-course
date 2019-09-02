@@ -11,4 +11,17 @@
 
 (() => {
     // your code here
+
+    //Excercise was meant for node.js, which uses localhost 3000.. so ignore that part
+
+    document.getElementById("run").addEventListener("click", function(){
+
+        fetch("http://localhost:63342/js-complete-course/_shared/api.json")
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(data){
+                console.log(data);
+            })
+    })
 })();
