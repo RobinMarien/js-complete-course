@@ -16,12 +16,12 @@
 
         window.lib.getPersons(function(error,persons){
 
-        if (persons == undefined){
-            console.error("the array is undefined")
-        }
-        else{
-            console.log(persons)
-        }
+            if (persons == undefined){
+                console.error("the array is undefined")
+            }
+            else{
+                console.log(persons)
+            }
         })
 
     })
