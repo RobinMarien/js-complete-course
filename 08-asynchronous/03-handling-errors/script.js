@@ -11,4 +11,19 @@
 
 (() => {
     // your code here
+
+    document.getElementById("run").addEventListener("click", function(){
+
+        window.lib.getPersons(function(error,persons){
+
+        if (persons == undefined){
+            console.error("the array is undefined")
+        }
+        else{
+            console.log(persons)
+        }
+        })
+
+    })
+
 })();
